@@ -1,4 +1,4 @@
-package com.example.catapp;
+package com.example.catapp.data;
 
 public class CatFact {
 

@@ -1,4 +1,4 @@
-package com.example.catapp;
+package com.example.catapp.busineslogic;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

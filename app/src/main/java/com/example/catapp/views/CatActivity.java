@@ -1,7 +1,6 @@
-package com.example.catapp;
+package com.example.catapp.views;
 
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -9,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.catapp.R;
+import com.example.catapp.busineslogic.RetrofitService;
 import com.example.catapp.databinding.ActivityMainBinding;
 import com.google.gson.JsonArray;
 import com.squareup.picasso.Picasso;

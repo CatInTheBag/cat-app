@@ -1,10 +1,13 @@
-package com.example.catapp;
+package com.example.catapp.views;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.catapp.R;
+import com.example.catapp.data.CatFact;
 
 public class ViewHolder extends RecyclerView.ViewHolder{
 

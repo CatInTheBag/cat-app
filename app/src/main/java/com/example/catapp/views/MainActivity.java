@@ -1,6 +1,5 @@
-package com.example.catapp;
+package com.example.catapp.views;
 
-import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
@@ -8,9 +7,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.Toast;
 
+import com.example.catapp.data.CatFact;
+import com.example.catapp.R;
+import com.example.catapp.busineslogic.RetrofitService;
 import com.example.catapp.databinding.ActivityMainBinding;
 import com.google.gson.JsonObject;
 
@@ -34,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<CatFact> items;
-    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCatFactItemClicked(CatFact catFact) {
                 //Toast.makeText(MainActivity.this,"Gallery Item clicked " +catFact.getHeader(), Toast.LENGTH_LONG ).show();
-                Intent intent = new Intent(MainActivity.this,CatActivity.class);
+                Intent intent = new Intent(MainActivity.this, CatActivity.class);
                 intent.putExtra("catHeader",catFact.getHeader());
                 intent.putExtra("catDescription",catFact.getFact());
                 startActivity(intent);
